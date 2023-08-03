@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P6</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+
+<body class="container pt-5 mt-5">
+    <header>
+        <h2>Vue Js3 Bangla tutorial</h2>
+    </header>
+    <section id="app" class="border">
+        <div>{{name}}</div>
+        <div>
+            <h2>WellCome Mr. {{changeName()}}</h2>
+        </div>
+        <h2>Counter: {{counter}}</h2>
+        <button class="mr-3" @click="increaseCounter(5)">+</button>
+        <button @click="decreaseCounter(5)">-</button>
+        <br>
+        <br>
+        <button class="mr-3" @click="increaseCounter(1)">+</button>
+        <button @click="decreaseCounter(1)">-</button>
+    </section>
+
+</body>
+<script src="app.js"></script>
+
+</html>
