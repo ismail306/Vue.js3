@@ -18,9 +18,10 @@
     <div>{{name}}</div>
     <div>
       <h2>WellCome Mr. {{changeName()}}</h2>
-      <h3>My age is {{obj1.age}}</h3>
-      <a :href="obj1.github"> my github link</a>
     </div>
+    <h2>Counter: {{counter}}</h2>
+    <button @click="counter++">+</button>
+    <button @click="counter--">-</button>
   </section>
 
 </body>
