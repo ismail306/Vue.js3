@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/vue.global.js"></script>
+</head>
+<div id="app">
+    <h1>{{ message }}</h1>
+    <h3>
+        Enter A Number
+    </h3>
+    <!-- <input :value="num " type="text" @input="handleInput"> -->
+    <input type="text" v-model="num">
+    <!-- 2A binding (combbination of even binding and method binding)-->
+    <br>
+    <br>
+    <button @click="getSquare()">Get Squire </button> &nbsp
+    <button @click="getDouble()">Get Double</button>&nbsp
+    <button @click="reset()">reset</button>
+    <br>
+    <br>
+    <h3>Inputed Number : {{num}}</h3>
+    <h3>Result: {{result}}</h3>
+</div>
+
+<body>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
