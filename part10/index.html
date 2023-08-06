@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Binding</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/vue.global.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        <p>{{name}}</p>
+        <input type="text" v-model="textColor"> <br>
+        <br>
+        <input type="text" v-model="bgColor"><br><br>
+        <input type="color" v-model="bgColor"> <br><br>
+        <div class="card" :style="{backgroundColor:bgColor, color:textColor}">
+            Card
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
