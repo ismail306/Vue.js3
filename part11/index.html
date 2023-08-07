@@ -15,12 +15,19 @@
     </p>
 
     <div id="app">
-        <p v-if="typewritersInStock">
-            in stock
+        <p v-if="typewritersInStock>0">
+            In Stock
         </p>
         <p v-else>
-            not in stock
+            Out of Stock
         </p>
+        <p v-if="text.includes('vue')">
+
+            {{text}}
+            
+        </p>
+        <p v-else>The word 'vue' is not found in the text</p>
+
     </div>
 
 
