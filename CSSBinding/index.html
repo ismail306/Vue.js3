@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Binding</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/vue.global.js"></script>
+</head>
+
+<body>
+    <div id="app">
+
+
+        <p>
+            <input type="range" min="0" max="1" step="0.1" v-model="opacityVal">
+            {{opacityVal}} (opacity value)
+        </p>
+        <div id="ontop" :style="{backgroundColor:'rgba(9,80,89,'+opacityVal+')'}">
+            Drag range slider to change opacity value
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

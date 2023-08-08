@@ -1,0 +1,21 @@
+#app>div{
+    position: relative;
+      border: dashed black 1px;
+      width: 400px;
+      height: 200px;
+      background-size: cover;
+}
+
+#ontop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 2;
+    color: white;
+
+
+}

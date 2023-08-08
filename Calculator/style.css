@@ -1,0 +1,39 @@
+.display{
+    height: 100px;
+    width: 320px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 5px;
+    border:1px solid #000000;
+    font-size: 20px;
+    padding: 10px;
+
+
+}
+
+#app{
+ 
+    margin-top: 50px;
+   
+   
+}
+
+#app button{
+    width: 64px;
+    height: 60px;
+    font-size: 30px;
+    border-radius: 5px;
+    border:1px solid #000000;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.calculator{
+   
+   
+   
+}
+
+

@@ -1,8 +1,7 @@
 var app = Vue.createApp({
   data() {
     return {
-      activeClass: "red",
-      name: "Ismail",
+      opacityVal: "0.8",
     };
   },
   methods: {

@@ -7,11 +7,11 @@ var app = Vue.createApp({
     };
   },
   methods: {
-    addItem(){
-      this.allItems.push({name: this.itemName, quantity: this.itemQuantity})
-      this.itemName = ""
-      this.itemQuantity = ""
-  }
+    addItem() {
+      this.allItems.push({ name: this.itemName, quantity: this.itemQuantity });
+      this.itemName = "";
+      this.itemQuantity = "";
+    },
   },
 });
 app.mount("#app");
