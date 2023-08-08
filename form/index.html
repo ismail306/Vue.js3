@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Binding</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/vue.global.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <form action="" @submit.prevent="addItem">
+            <input type="text" v-model="itemName" placeholder="Enter Item Name..."><br><br>
+            <input type="number" v-model="itemQuantity" placeholder="Enter Item Quantity..."> <br><br>
+            <button type="submit">submit</button>
+
+        </form>
+        <div>
+            <h2>All Items</h2>
+            <div>&nbsp; &nbsp; &nbsp;&nbsp; <span>Item Name</span> &nbsp; &nbsp; &nbsp;
+                <span>Item Quantity</span>
+            </div>
+            <ul>
+                <p v-for="item in allItems">
+                    <span>{{item.name}}</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <span>{{item.quantity}}</span>
+
+
+
+                </p>
+
+            </ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
